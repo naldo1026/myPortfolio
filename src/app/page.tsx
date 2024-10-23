@@ -1,101 +1,136 @@
-import Image from "next/image";
+import Image from "next/image"
+
+// React Icons
+import { FaLinkedin, FaTreeCity } from "react-icons/fa6"
+import { IoCall } from "react-icons/io5"
+import { MdEmail } from "react-icons/md"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col md:flex-row h-screen p-10 md:p-20 font-mono text-2xl font-bold gap-16">
+      <div className="flex-col w-full md:w-1/2">
+        <div className="flex flex-col md:flex-row">
+          <Image
+            src="/ronaldo.png"
+            width={150}
+            height={150}
+            alt="Picture of Ronaldo Goncalves"
+            className="rounded-xl mr-5"
+          />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div>
+            <h3 className="mt-2 md:mt-0">Ronaldo Goncalves</h3>
+            <p className="text-lg font-light mb-2">Software Developer</p>
+            <span className="text-sm font-light">
+              <p className="flex items-center">
+                <FaTreeCity className="mr-1" />
+                London
+              </p>
+              <p className="flex items-center">
+                <IoCall className="mr-1" />
+                +44 7539 537166
+              </p>
+              <p className="flex items-center">
+                <MdEmail className="mr-1" />
+                rgoncalves1026@gmail.com
+              </p>
+              <p className="flex items-center">
+                <FaLinkedin className="mr-1" />
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ronaldogon/"
+                >
+                  linkedin.com/in/ronaldogon
+                </a>
+              </p>
+            </span>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="mt-10">
+          <h3>Tech Stack & Tools</h3>
+          <p className="text-sm">
+            Typescript, React, Redux, Next js, Testing with Cypress & Jest,
+            Tailwind, Material UI, Bootstrap, HTML, CSS, Javascript, Vite,
+            Webpack, Validation with ZOD, Axios, React Tanstack Query,
+            proficient with Git, Ruby and Ruby on Rails
+          </p>
+        </div>
+        <div className="mt-10">
+          <h3>Education</h3>
+          <h2 className="text-lg font-light">
+            Le Wagon, London - Fullstack software developer Bootcamp
+          </h2>
+          <p className="text-sm">
+            Le Wagon, London - Fullstack software developer Bootcamp I Learned
+            Ruby, SQL, HTML, CSS, Javascript, Rest API’s, TDD, Ruby on Rails,
+            Git.
+          </p>
+        </div>
+        <div className="mt-10 text-lg font-light">
+          My portfolio was created by using next js, react and tailwind css
+        </div>
+      </div>
+
+      <div className="w-full md:w-1/2">
+        <div className="flex-col">
+          <h3>Work Experience</h3>
+          <p className="font-light text-sm mt-2">April 2023 - PRESENT</p>
+          <p className="text-lg mb-2">
+            Joe & The Juice - Purchasing Manager / Software Developer
+          </p>
+
+          <ul className="text-sm list-disc ml-5">
+            <li>
+              Currently have a live UK availability app running in real time
+              that is used in 4 markets: UK, Sweden, Finland & Denmark that was
+              developed by myself. It helps 250+ stores in these markets to
+              monitor the product availability in each store. This web app is
+              now vital in stores and is closely monitored by HQ. it&apos;s a
+              web app that was built on react with typescript, using react fetch
+              api.
+            </li>
+
+            <li>
+              The UK Availability app is also used across other departments such
+              as our facilities team & supply chain team. Facilities teams use
+              the app to locate problems that occur in stores as you can see if
+              grills, coffee machines or ice machines are down. Supply chain
+              team uses it to monitor product availability across the whole
+              market.
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex-col mt-5">
+          <p className="font-light text-sm">January 2022 - April 2023</p>
+          <p className="text-lg mb-2">Joe & The Juice - Front End Developer</p>
+          <ul className="text-sm list-disc ml-5">
+            <li>
+              Worked as a junior software developer in a team of 6, reporting to
+              the senior front end developer.
+            </li>
+
+            <li>
+              Worked on and maintained 6 different projects. Projects worked on
+              were an internal admin and employee management web app where shift
+              plans tools, employee contracts, employee database, accounting &
+              reporting tools were managed.
+            </li>
+
+            <li>
+              Main focus was a customer care web app that allowed our company to
+              see transactions, receipts and communicate with customers as well
+              as process refunds etc.
+            </li>
+            <li>
+              Other projects worked on were a campaign management app for
+              marketing to manage and create new promotions, and marketing
+              strategies etc. An inventory system used by supply chain and store
+              managers, managing stock, orders, sales etc.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
