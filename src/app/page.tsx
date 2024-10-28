@@ -7,9 +7,9 @@ import { MdEmail } from "react-icons/md"
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row h-screen p-10 md:p-20 font-mono text-2xl font-bold gap-16">
-      <div className="flex-col w-full md:w-1/2">
-        <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col lg:flex-row h-screen p-10 lg:p-20 font-mono text-2xl font-bold gap-16">
+      <div className="flex-col w-full lg:w-1/2">
+        <div className="flex flex-col lg:flex-row">
           <Image
             src="/ronaldo.png"
             width={150}
@@ -19,7 +19,7 @@ export default function Home() {
           />
 
           <div>
-            <h3 className="mt-2 md:mt-0">Ronaldo Goncalves</h3>
+            <h3 className="mt-2 lg:mt-0">Ronaldo Goncalves</h3>
             <p className="text-lg font-light mb-2">Software Developer</p>
             <span className="text-sm font-light">
               <p className="flex items-center">
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2">
+      <div className="w-full lg:w-1/2">
         <div className="flex-col">
           <h3>Work Experience</h3>
           <p className="font-light text-sm mt-2">April 2023 - PRESENT</p>
