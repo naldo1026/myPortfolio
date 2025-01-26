@@ -75,11 +75,13 @@ export default function Home() {
         <div className="flex-col">
           <h3>Work Experience</h3>
           <p className="font-light text-sm mt-2">April 2023 - PRESENT</p>
-          <p className="text-lg mb-2">
-            Joe & The Juice - Purchasing Manager / Software Developer
-          </p>
+          <p className="text-lg mb-2">Joe & The Juice - Front End Developer</p>
 
           <ul className="text-sm list-disc ml-5">
+            <li>
+              Focused around building tech tools & solutions for the supply
+              chain & purchasing teams.
+            </li>
             <li>
               Currently have a live UK availability app running in real time
               that is used in 4 markets: UK, Sweden, Finland & Denmark that was
@@ -103,7 +105,9 @@ export default function Home() {
 
         <div className="flex-col mt-5">
           <p className="font-light text-sm">January 2022 - April 2023</p>
-          <p className="text-lg mb-2">Joe & The Juice - Front End Developer</p>
+          <p className="text-lg mb-2">
+            Joe & The Juice - Junior Front End Developer
+          </p>
           <ul className="text-sm list-disc ml-5">
             <li>
               Worked as a junior software developer in a team of 6, reporting to
